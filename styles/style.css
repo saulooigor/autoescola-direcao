@@ -26,3 +26,11 @@
 #categorias{
     background: url(../assets/images/background1_direcao_autoescola.png) no-repeat center center fixed;
 }
+
+
+@media (max-width: 480px) {
+    
+    .card{
+        min-height: none;
+    }
+}
