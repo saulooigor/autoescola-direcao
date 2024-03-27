@@ -1,6 +1,7 @@
 .card {
     border: 3px solid transparent;
     transition: transform 0.3s ease;
+    min-height: 347px;
 }
 
 
@@ -20,4 +21,8 @@
     height: 15vw;
     object-fit: cover;
     opacity: .3;
-}	
+}
+
+#categorias{
+    background: url(../assets/images/background1_direcao_autoescola.png) no-repeat center center fixed;
+}
