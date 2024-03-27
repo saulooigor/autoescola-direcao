@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- adicionar um titulo perguntando qual a categoria a pessoa deseja habilitar e um subtitulo informando a pessoa pra selecionar uma das opçoes tudo centralizado no meio da tela -->
+    <div class="container-fluid">
+        <div class="row justify-content-center w-75 mx-auto">
+            <div class="col text-right my-5">
+                <h1>Qual categoria deseja habilitar?</h1>
+                <h3>Selecione uma das opções abaixo</h3>
+            </div>
+        </div>
+    </div>
+    <!-- criar uma secao com 5 cards com borda arredonda e shadow, com uma imagem preenchendo todo o card e um texto no centro do card -->
+    <div class="container-fluid">
+        <div class="row justify-content-center w-75 mx-auto">
+            <div class="col-md-4 my-3 ">
+                <div class="card rounded shadow">
+                    <img src="assets/images/moto.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title
+                        ">Categoria A</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 ">
+                <div class="card rounded shadow">
+                    <img src="assets/images/carro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title
+                        ">Categoria B</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 ">
+                <div class="card rounded shadow">
+                    <img src="assets/images/caminhao.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title
+                        ">Categoria C</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 ">
+                <div class="card rounded shadow">
+                    <img src="assets/images/onibus.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title
+                        ">Categoria D</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 ">
+                <div class="card rounded shadow">
+                    <img src="assets/images/carreta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title
+                        ">Categoria E</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add jquery js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Add Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- criar uma logica para quando clicar num card estar selecionado e os outros deselecionados onde a borda fica preta -->
+    <script>
+        $(document).ready(function(){
+            $('.card').click(function(){
+                $('.card').removeClass('border-black');
+                $('.card').find('.card-img-top').css('opacity', '.3');
+                $('.card').find('.card-body').css('background-color', 'white');
+                $('.card').find('.card-body').css('color', 'black');
+
+                $(this).addClass('border-black');
+                $(this).find('.card-img-top').css('opacity', '1');
+                $(this).find('.card-body').css('background-color', 'black');
+                $(this).find('.card-body').css('color', 'white');
+
+            });
+        });
+    </script>
+</body>
+</html>
