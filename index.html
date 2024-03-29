@@ -88,34 +88,17 @@
             </div>
         </div>
     </div>
-
-<!-- criar um botao flutuante para redirecionar para o whatsapp -->
-<div class="floating-button">
-    <a href="https://api.whatsapp.com/send?phone=31975157421" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</div>
-
+    <!-- criar um botao flutuante para redirecionar para o whatsapp -->
+    <div class="floating-button">
+        <a href="https://api.whatsapp.com/send?phone=31975157421" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
     <!-- add jquery js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <!-- Add Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- criar uma logica para quando clicar num card estar selecionado e os outros deselecionados onde a borda fica preta -->
-    <script>
-        $(document).ready(function(){
-            $('.card').click(function(){
-                $('.card').removeClass('border-black');
-                $('.card').find('.card-img-top').css('opacity', '.3');
-                $('.card').find('.card-body').css('background-color', 'white');
-                $('.card').find('.card-body').css('color', 'black');
-
-                $(this).addClass('border-black');
-                $(this).find('.card-img-top').css('opacity', '1');
-                $(this).find('.card-body').css('background-color', 'black');
-                $(this).find('.card-body').css('color', 'white');
-
-            });
-        });
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
