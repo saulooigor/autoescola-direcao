@@ -91,3 +91,16 @@ h3{
 .floating-button a {
     text-decoration: none;
 }
+
+#header .btn{
+    background-color: transparent !important;
+    border: 2px solid black !important;
+    border-radius: 4px;
+    color: black !important;
+    font-weight: bold;
+}
+
+#header .btn:hover{
+    background-color: black !important;
+    color: white !important;
+}
