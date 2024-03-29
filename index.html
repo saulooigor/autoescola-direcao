@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Project</title>
+    <title>Auto Escola Direção</title>
     <!-- Add Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
+
+    <!-- importar lib para utilizar icons do fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- importar as fontes montserrat e open sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+    <!-- uma secao com a logo centralizada numa coluna e um subtitulo chamativo na outra coluna usando o container fluid -->
+    <div class="container-fluid" id="header">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center my-5">
+                <img src="assets/images/logo_autoescola_direcao.png" alt="Auto Escola Direção" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center my-5 align-items-center d-flex flex-column justify-content-center">
+                <h1>Seja bem-vindo a sua auto escola de confiança</h1>
+                <button class="btn btn-primary btn-lg my-3">Vamos começar</button>
+            </div>
+        </div>
+    </div>
     <!-- criar uma secao com 5 cards com borda arredonda e shadow, com uma imagem preenchendo todo o card e um texto no centro do card -->
     <div class="container-fluid" id="categorias">
         <div class="row justify-content-center w-75 mx-auto">
@@ -71,6 +88,14 @@
             </div>
         </div>
     </div>
+
+<!-- criar um botao flutuante para redirecionar para o whatsapp -->
+<div class="floating-button">
+    <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
     <!-- add jquery js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <!-- Add Bootstrap JS -->

@@ -38,3 +38,56 @@
         height: 50vw;
     }
 }
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h5{
+    font-weight: bolder !important;
+}
+
+h3{
+    font-weight:500 !important;
+}
+
+#header{
+    background: url(../assets/images/faixa_pedestre_fade.png) no-repeat center center fixed;
+    
+}
+
+/* Estilos para o botão flutuante do WhatsApp */
+.floating-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.floating-button a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-button i {
+    font-size: 24px;
+    color: white;
+}
+
+.floating-button:hover {
+    background-color: #1e9e34;
+}
+
+.floating-button a {
+    text-decoration: none;
+}
