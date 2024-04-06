@@ -1,11 +1,11 @@
-.card {
+#categorias .card {
     border: 3px solid transparent;
     transition: transform 0.3s ease;
     min-height: 347px;
 }
 
 
-.card:hover {
+#categorias .card:hover {
     transform: scale(1.1);
     z-index: 1;
     position: relative;
@@ -16,7 +16,7 @@
     border-color: black;
 }
 
-.card-img-top {
+#categorias  .card-img-top {
     width: 100%;
     height: 15vw;
     object-fit: cover;
@@ -31,11 +31,11 @@
 
 @media (max-width: 480px) {
     
-    .card{
+    #categorias  .card{
         min-height: none;
     }
 
-    .card-img-top {
+    #categorias .card-img-top {
         height: 50vw;
     }
 }
