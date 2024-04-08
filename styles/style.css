@@ -121,8 +121,25 @@ ul li::before {
     background-repeat: no-repeat; /* Evita que o primeiro background se repita */
     background-size: 70% 100%, 100% 100%; /* Define o tamanho de cada background */
     background-position: 0 0, 70% 0; /* Define a posição de cada background */
+
 }
 
 #primeira-habilitacao hr{
     border-top: 1.8px solid black;
+}
+
+#primeira-habilitacao .card{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+    .card-footer{
+        background: linear-gradient(-45deg, #004AAD 0%, #004AAD 10%, whitesmoke 10%, whitesmoke 90%, white 90%, white 100%) !important;
+        border: 2px solid white !important;
+        color: black !important;
+        
+        h3{
+            font-weight: bold !important;
+        }
+    }
+
 }
