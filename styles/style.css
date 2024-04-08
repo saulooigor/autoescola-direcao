@@ -114,3 +114,15 @@ ul li::before {
     color: green;
 }
 
+#primeira-habilitacao{
+    background: 
+        linear-gradient(to right, whitesmoke 0%, whitesmoke 70%), /* Primeiros 70% do background */
+        repeating-linear-gradient(to bottom, whitesmoke 0%, whitesmoke 10%, transparent 10%, transparent 20%); /* Últimos 30% do background */
+    background-repeat: no-repeat; /* Evita que o primeiro background se repita */
+    background-size: 70% 100%, 100% 100%; /* Define o tamanho de cada background */
+    background-position: 0 0, 70% 0; /* Define a posição de cada background */
+}
+
+#primeira-habilitacao hr{
+    border-top: 1.8px solid black;
+}
