@@ -149,6 +149,33 @@ hr{
 
 }
 
-/* #mapaAreaExame {
-    border: 3px outset lightgray !important;
-} */
+#banner{
+    background: url(../assets/images/fachada_auto_escola_fade.png) no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 90%;
+        height: 90%;
+    }
+    
+}
+
+#infoLocalizacao{ 
+    background-color: #004AAD;
+    color: white;
+    font-size: large !important;
+    font-weight: 500 !important;
+    
+    a{
+        font-size: larger !important;
+    }
+}
+
+#localizacao, #localizacao .row{ 
+    padding: 0px !important;
+}
